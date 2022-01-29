@@ -11,7 +11,7 @@ API_BASE_URL = 'https://smartapi.vesync.com'
 API_RATE_LIMIT = 30
 API_TIMEOUT = 5
 
-DEFAULT_TZ = 'America/New_York'
+DEFAULT_TZ = 'America/Chicago'
 
 APP_VERSION = '2.5.1'
 PHONE_BRAND = 'SM N9005'

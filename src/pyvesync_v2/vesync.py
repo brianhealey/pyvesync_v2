@@ -29,7 +29,7 @@ def get_device(device_type, config, manager):
         return VeSyncOutlet15A(config, manager)
     if device_type in ['ESWL01', 'ESWL03']:
         return VeSyncWallSwitch(config, manager)
-    if device_type == 'LV-PUR131S':
+    if device_type in ['LV-PUR131S', 'LAP-C601S-WUS', 'Core400S']:
         return VeSyncAir131(config, manager)
     if device_type == 'ESO15-TB':
         return VeSyncOutdoorPlug(config, manager)
@@ -131,7 +131,7 @@ class VeSync:
             'wifi-switch-1.3', 'ESW03-USA', 'ESW01-EU', 'ESW15-USA', 'ESO15-TB'
         ]
         switch_types = ['ESWL01', 'ESWL03', 'ESWD16']
-        fan_types = ['LV-PUR131S']
+        fan_types = ['LV-PUR131S', 'LAP-C601S-WUS', 'Core400S']
         bulb_types = ['ESL100', 'ESL100CW']
 
         num_devices = len(self.outlets) + len(self.switches) + len(self.fans) \
